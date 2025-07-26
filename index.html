@@ -1,26 +1,124 @@
 <h1>hello</h1>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Resume</title>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume - Your Name</title>
   <style>
-    body { font-family: Arial; margin: 40px; }
-    h1 { color: #333; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 40px;
+      background: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+      margin-bottom: 5px;
+    }
+    h1 {
+      font-size: 32px;
+    }
+    h2 {
+      font-size: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 3px;
+      margin-top: 30px;
+    }
+    p, li {
+      font-size: 16px;
+    }
+    ul {
+      margin: 5px 0 15px 20px;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .contact {
+      font-size: 14px;
+      color: #555;
+    }
+    .job-title {
+      font-weight: bold;
+    }
+    .edu, .exp {
+      margin-bottom: 15px;
+    }
+    .date {
+      float: right;
+      color: #888;
+    }
+    @media print {
+      body { margin: 10mm; }
+    }
   </style>
 </head>
 <body>
+
   <h1>Your Name</h1>
-  <p><strong>Email:</strong> your.email@example.com</p>
-  <p><strong>Summary:</strong> Brief intro about you...</p>
+  <p class="contact">
+    📧 your.email@example.com | 📞 +91-9876543210 | 🌐 yourportfolio.com | 📍 City, Country
+  </p>
 
-  <h2>Experience</h2>
-  <ul>
-    <li><strong>Job 1</strong> – Company – Dates</li>
-    <li><strong>Job 2</strong> – Company – Dates</li>
-  </ul>
+  <div class="section">
+    <h2>Professional Summary</h2>
+    <p>Detail-oriented and passionate [Your Role] with X+ years of experience in [Domain/Tech]. Skilled in [skills] with a strong ability to deliver scalable and efficient solutions. Seeking to contribute to impactful projects in a challenging environment.</p>
+  </div>
 
-  <h2>Education</h2>
-  <p>B.Tech in XYZ, ABC University</p>
+  <div class="section">
+    <h2>Work Experience</h2>
+    <div class="exp">
+      <div><span class="job-title">Software Engineer</span> – ABC Technologies <span class="date">2022 – Present</span></div>
+      <ul>
+        <li>Developed scalable web apps using React.js and Node.js</li>
+        <li>Collaborated with cross-functional teams to deliver key product updates</li>
+        <li>Reduced backend latency by 30% through code optimization</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div><span class="job-title">Intern – Web Developer</span> – XYZ Solutions <span class="date">Jan 2022 – Jun 2022</span></div>
+      <ul>
+        <li>Created responsive websites using HTML, CSS, and JavaScript</li>
+        <li>Assisted in backend development using Django</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <div class="edu">
+      <strong>B.Tech in Computer Science</strong> – ABC University <span class="date">2019 – 2023</span>
+      <p>CGPA: 8.5/10</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>Languages: Python, JavaScript, C++</li>
+      <li>Frameworks: React, Node.js, Django</li>
+      <li>Tools: Git, GitHub, Docker</li>
+      <li>Database: MySQL, MongoDB</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Google Data Analytics – Coursera (2024)</li>
+      <li>Python for Everybody – Coursera (2023)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Resume Builder Web App:</strong> Built a resume creator using React and Node.js with PDF export functionality.</li>
+      <li><strong>AI Chatbot:</strong> Developed a chatbot for college queries using Python and NLP libraries.</li>
+    </ul>
+  </div>
+
 </body>
 </html>
